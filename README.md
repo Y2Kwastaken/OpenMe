@@ -44,7 +44,7 @@ player.openInventory(anvilView);
 <dependency>
   <groupId>sh.miles</groupId>
   <artifactId>OpenMe</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
+  <version>1.0.2-SNAPSHOT</version>
 </dependency>
 ```
 
@@ -56,5 +56,5 @@ maven {
     url = uri("https://maven.miles.sh/libraries")
 }
 
-implementation("sh.miles:OpenMe:1.0.0-SNAPSHOT")
+implementation("sh.miles:OpenMe:1.0.2-SNAPSHOT")
 ```

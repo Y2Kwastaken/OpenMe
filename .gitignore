@@ -20,3 +20,13 @@ buildSrc/build/
 openme-nms/api/build/
 
 openme-nms/spigot-v1_20_R4/build/
+
+openme-core/build/
+
+openme-nms/build/
+
+openme-nms/spigot-v1_20_R1/build/
+
+openme-nms/spigot-v1_20_R2/build/
+
+openme-nms/spigot-v1_20_R3/build/

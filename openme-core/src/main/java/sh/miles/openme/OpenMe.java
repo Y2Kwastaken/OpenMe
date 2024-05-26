@@ -12,15 +12,15 @@ import sh.miles.openme.loader.OpenMeLoader;
  */
 public final class OpenMe {
 
-    private boolean setup = false;
-    private OpenMeProvider provider;
+    private static boolean setup = false;
+    private static OpenMeProvider provider;
 
     /**
      * Sets up OpenMe
      *
      * @throws IllegalStateException thrown if OpenMe is already running
      */
-    public void setup() throws IllegalStateException {
+    public static void setup() throws IllegalStateException {
         if (setup) {
             throw new IllegalStateException("Can not setup OpenMe if it has already been setup");
         }
@@ -34,25 +34,25 @@ public final class OpenMe {
      *
      * @throws IllegalStateException thrown if OpenMe is not running
      */
-    public void destroy() throws IllegalStateException {
+    public static void destroy() throws IllegalStateException {
         if (!setup) {
             throw new IllegalStateException("Can not destroy OpenMe if it has not been setup");
         }
         OpenMeLoader.INSTANCE.disable();
     }
 
-    public OpenMeGeneric<String> string() throws IllegalStateException {
+    public static OpenMeGeneric<String> string() throws IllegalStateException {
         if (!setup) {
             throw new IllegalStateException("Can not use OpenMe if it has not been setup");
         }
-        return this.provider.string();
+        return provider.string();
     }
 
-    public OpenMeGeneric<BaseComponent> bungee() throws IllegalStateException {
+    public static OpenMeGeneric<BaseComponent> bungee() throws IllegalStateException {
         if (!setup) {
             throw new IllegalStateException("Can not use OpenMe if it has not been setup");
         }
-        return this.provider.bungee();
+        return provider.bungee();
     }
 
 }

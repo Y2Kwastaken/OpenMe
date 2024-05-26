@@ -9,6 +9,15 @@ repositories {
     mavenCentral()
 }
 
+dependencies {
+    implementation(project(":openme-core"))
+    implementation(project(":openme-nms"))
+}
+
+tasks.build {
+    this.dependsOn(tasks.shadowJar)
+}
+
 subprojects {
     apply(plugin = "java")
 
