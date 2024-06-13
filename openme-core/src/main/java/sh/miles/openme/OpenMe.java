@@ -41,6 +41,12 @@ public final class OpenMe {
         OpenMeLoader.INSTANCE.disable();
     }
 
+    /**
+     * Gets the String OpenMeGeneric provider
+     *
+     * @return the String OpenMeGeneric provider
+     * @throws IllegalStateException thrown if OpenMe has not been setup with {@link OpenMe#setup()}
+     */
     public static OpenMeGeneric<String> string() throws IllegalStateException {
         if (!setup) {
             throw new IllegalStateException("Can not use OpenMe if it has not been setup");
@@ -48,6 +54,12 @@ public final class OpenMe {
         return provider.string();
     }
 
+    /**
+     * Gets the Bungee Chat OpenMeGeneric provider
+     *
+     * @return the BungeeChat OpenMeGeneric provider
+     * @throws IllegalStateException thrown if OpenMe has not been setup with {@link OpenMe#setup()}
+     */
     public static OpenMeGeneric<BaseComponent> bungee() throws IllegalStateException {
         if (!setup) {
             throw new IllegalStateException("Can not use OpenMe if it has not been setup");

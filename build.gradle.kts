@@ -14,8 +14,18 @@ dependencies {
     implementation(project(":openme-nms"))
 }
 
+tasks.jar {
+    enabled = false
+}
+
 tasks.build {
     this.dependsOn(tasks.shadowJar)
+}
+
+tasks.shadowJar {
+    archiveClassifier = ""
+    archiveVersion = ""
+    this.archiveFileName.set("${project.name}-${project.version}.jar")
 }
 
 subprojects {
