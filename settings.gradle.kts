@@ -1,7 +1,7 @@
 rootProject.name = "OpenMe"
 
 gradle.rootProject {
-    this.version = "1.1.1-SNAPSHOT"
+    this.version = "1.1.3-SNAPSHOT"
     this.group = "sh.miles"
 }
 
