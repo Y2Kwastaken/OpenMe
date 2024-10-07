@@ -1,5 +1,11 @@
 # OpenMe
 
+## [This library is no longer needed as of 1.21.1](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/MenuType.html)
+
+I worked very hard to get these changes into spigot itself hope you enjoy!
+
+## Archive
+
 Using OpenMe is as easy as 1-2-3.
 
 You can setup OpenMe in your onEnable with the following code:
